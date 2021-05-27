@@ -20,7 +20,7 @@ jobs:
       - name: Create artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: apk
+          name: zcode-apk
           path: ${{ env.APK_PATH }}
 
   release:
@@ -33,7 +33,7 @@ jobs:
       - name: Download binaries artifact
         uses: actions/download-artifact@v2
         with:
-          name: apk
+          name: zcode-apk
           path: ${{ env.APK_PATH }}
       - name: Upload apk to release assets
         run: |
