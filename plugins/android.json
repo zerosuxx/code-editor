@@ -8,60 +8,60 @@
   },
   "installed_plugins": {
     "cordova-clipboard": {
-      "PACKAGE_NAME": "com.foxdebug.acode"
+      "PACKAGE_NAME": "hu.zero.zcode"
     },
     "cordova-custom-config": {
-      "PACKAGE_NAME": "com.foxdebug.acode"
+      "PACKAGE_NAME": "hu.zero.zcode"
     },
     "cordova-disable-http-cache": {
-      "PACKAGE_NAME": "com.foxdebug.acode"
+      "PACKAGE_NAME": "hu.zero.zcode"
     },
     "cordova-plugin-android-permissions": {
-      "PACKAGE_NAME": "com.foxdebug.acode"
+      "PACKAGE_NAME": "hu.zero.zcode"
     },
     "cordova-plugin-buildinfo": {
-      "PACKAGE_NAME": "com.foxdebug.acode"
+      "PACKAGE_NAME": "hu.zero.zcode"
     },
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "com.foxdebug.acode"
+      "PACKAGE_NAME": "hu.zero.zcode"
     },
     "cordova-plugin-file": {
-      "PACKAGE_NAME": "com.foxdebug.acode"
+      "PACKAGE_NAME": "hu.zero.zcode"
     },
     "cordova-plugin-ftp": {
-      "PACKAGE_NAME": "com.foxdebug.acode"
+      "PACKAGE_NAME": "hu.zero.zcode"
     },
     "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "com.foxdebug.acode"
+      "PACKAGE_NAME": "hu.zero.zcode"
     },
     "cordova-plugin-intent": {
-      "PACKAGE_NAME": "com.foxdebug.acode"
+      "PACKAGE_NAME": "hu.zero.zcode"
     },
     "cordova-plugin-navigationbar-color": {
-      "PACKAGE_NAME": "com.foxdebug.acode"
+      "PACKAGE_NAME": "hu.zero.zcode"
     },
     "cordova-plugin-sdcard": {
       "ANDROID_SUPPORT_VERSION": "28.+",
-      "PACKAGE_NAME": "com.foxdebug.acode"
+      "PACKAGE_NAME": "hu.zero.zcode"
     },
     "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "com.foxdebug.acode"
+      "PACKAGE_NAME": "hu.zero.zcode"
     },
     "cordova-plugin-system": {
       "ANDROID_SUPPORT_VERSION": "28.+",
-      "PACKAGE_NAME": "com.foxdebug.acode"
+      "PACKAGE_NAME": "hu.zero.zcode"
     },
     "cordova-plugin-vibration": {
-      "PACKAGE_NAME": "com.foxdebug.acode"
+      "PACKAGE_NAME": "hu.zero.zcode"
     },
     "cordova-plugin-webserver": {
-      "PACKAGE_NAME": "com.foxdebug.acode"
+      "PACKAGE_NAME": "hu.zero.zcode"
     },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.foxdebug.acode"
+      "PACKAGE_NAME": "hu.zero.zcode"
     },
     "cordova-plugin-x-toast": {
-      "PACKAGE_NAME": "com.foxdebug.acode"
+      "PACKAGE_NAME": "hu.zero.zcode"
     }
   },
   "dependent_plugins": {}

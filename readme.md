@@ -42,6 +42,13 @@ First run `npm install` to install all dependencies, then run `webpack` to build
 
 If you have installed yarn you can simply run `yarn build-run` to build the apk and run on connect android device or emulator.
 
+## How to build with docker
+
+```
+docker-compose run --rm app npm run clean
+docker-compose run --rm app npm run build
+```
+
 ## Special thanks to
 
 - [Ace editor](https://ace.c9.io/)

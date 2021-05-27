@@ -12,10 +12,6 @@ const logoTextPaid = `<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="ic_launcher_background">#3a3e54</color>
 </resources>`;
-const logoTextFree = `<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="ic_launcher_background">#ffffff</color>
-</resources>`;
 
 try {
 
@@ -33,13 +29,7 @@ try {
     babelrc.compact = true;
   }
 
-  if (arg2 === 'free') {
-    logo = logoTextFree;
-    config = config.replace(/id="([a-z.]+")/, 'id="com.foxdebug.acodefree"');
-  } else {
-    logo = logoTextPaid;
-    config = config.replace(/id="([a-z.]+")/, 'id="com.foxdebug.acode"');
-  }
+  logo = logoTextPaid;
 
   fs.writeFileSync(logopath, logo, 'utf8');
   fs.writeFileSync(configpath, config, 'utf8');

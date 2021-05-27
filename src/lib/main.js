@@ -10,7 +10,7 @@ import '../styles/help.scss';
 import '../styles/overrideAceStyle.scss';
 
 import "core-js/stable";
-import "html-tag-js/polyfill";
+import "html-tag-js/dist/polyfill";
 import tag from 'html-tag-js';
 import mustache from 'mustache';
 import tile from "../components/tile";

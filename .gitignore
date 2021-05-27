@@ -4,4 +4,5 @@ platforms
 build.json
 www/js/build
 www/css/build
-package-lock.json
+.idea/
+.gradle/
