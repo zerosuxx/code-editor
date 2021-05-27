@@ -13,10 +13,10 @@ module.exports = {
 
     try {
       const fileData = fs.readFileSync(androidManifest, "utf-8");
-      const ID = reset ? "com.foxdebug" : /package="([0-9a-zA-Z\.\-_]*)"/.exec(fileData)[1];
+      const ID = reset ? "hu.zero" : /package="([0-9a-zA-Z\.\-_]*)"/.exec(fileData)[1];
       const newFileData = fileData.replace(
         /(android:authorities=")([0-9a-zA-Z\.\-_]*)(")/,
-        `$1${reset?"com.foxdebug":ID}.provider$3`
+        `$1${reset?"hu.zero":ID}.provider$3`
       );
       fs.writeFileSync(androidManifest, newFileData);
 

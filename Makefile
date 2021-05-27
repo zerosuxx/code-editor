@@ -10,4 +10,4 @@ build:
 	$(run_docker) npm run build
 
 sh:
-	$(run_docker) sh
+	$(run_docker) bash

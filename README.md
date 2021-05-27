@@ -1,6 +1,6 @@
 # Acode editor (Code editor for android)
 
-![Build the app](https://github.com/deadlyjack/code-editor/workflows/Build%20the%20app/badge.svg)
+[![CI](https://github.com/zerosuxx/zcode/actions/workflows/main.yml/badge.svg)](https://github.com/zerosuxx/zcode/actions/workflows/main.yml)
 
 ![logo](./res/icon/android/ic_launcher-web.png)
 
@@ -45,8 +45,8 @@ If you have installed yarn you can simply run `yarn build-run` to build the apk 
 ## How to build with docker
 
 ```
-docker-compose run --rm app npm run clean
-docker-compose run --rm app npm run build
+make clean
+make build
 ```
 
 ## Special thanks to

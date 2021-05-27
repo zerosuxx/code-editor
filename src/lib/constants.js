@@ -12,7 +12,7 @@ export default {
   CONSOLE_PORT: 8159,
   PORT: 8158,
   VIBRATION_TIME: 30,
-  BACKUP_FILE: 'backups/Acode/backup',
+  BACKUP_FILE: 'backups/Zcode/backup',
   PAYPAL: "https://paypal.me/deadlyjack",
   PATREON: "https://patreon.com/foxdebug",
   PAID_VERSION: "https://play.google.com/store/apps/details?id=com.foxdebug.acode",
