@@ -254,13 +254,14 @@ export default function editorSettings() {
                 dialogs.select(
                         strings['cursor controller size'],
                         [
-                            [strings.none, 'none'],
-                            [strings.small, 'small'],
-                            [strings.large, 'large']
+                            ['none', strings.none],
+                            ['small', strings.small],
+                            ['large', strings.large]
                         ], {
                             default: values.cursorControllerSize
                         })
                     .then(res => {
+                        alert(res);
                         appSettings.update({
                             cursorControllerSize: res
                         });
