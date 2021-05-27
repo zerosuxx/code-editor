@@ -7,8 +7,9 @@
   "scripts": {
     "lang": "node ./utils/lang.js",
     "config-build": "node ./utils/config.js",
-    "build": "yarn config-build p && npm rebuild node-sass && webpack && npm run build-apk",
+    "build": "yarn config-build p && npm run build-webpack && npm run build-apk",
     "sh": "docker-compose run --rm app bash",
+    "build-webpack": "webpack",
     "build-docker": "docker-compose run --rm app npm run build",
     "build-apk": "cordova build android",
     "build-run-free": "yarn config-build d free && webpack && cordova run android",
@@ -21,7 +22,7 @@
     "build-release-free": "yarn config-build p free && webpack && cordova build android --release",
     "build-release": "yarn config-build p && webpack && cordova build android --release",
     "test": "jest",
-    "clean": "cordova platform rm android --save && cordova platform add android --save"
+    "clean": "npm rebuild node-sass && cordova platform rm android --save && cordova platform add android --save"
   },
   "keywords": [
     "ecosystem:cordova"
