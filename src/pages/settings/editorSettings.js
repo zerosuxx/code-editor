@@ -261,7 +261,6 @@ export default function editorSettings() {
                             default: values.cursorControllerSize
                         })
                     .then(res => {
-                        alert(res);
                         appSettings.update({
                             cursorControllerSize: res
                         });
