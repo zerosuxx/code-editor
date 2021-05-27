@@ -50,7 +50,6 @@ function textControl(editor, controls, container) {
     }
 
     function ontouchstart(e) {
-
         const shiftKey = tag.get('#shift-key');
         if ((shiftKey && shiftKey.getAttribute('data-state') === 'on')) return;
         if (count) preventDefault(e);
@@ -186,7 +185,6 @@ function enableSingleMode() {
         const el = this;
         let showCm = $cm.isConnected;
         let move = false;
-
         document.ontouchmove = function (e) {
             e.clientY = e.touches[0].clientY - 28;
             e.clientX = e.touches[0].clientX;
@@ -211,6 +209,7 @@ function enableSingleMode() {
                 updateCm();
             }
         };
+        enableSingleMode().showContextMenu();
     }
 
     function showContextMenu() {
