@@ -3,7 +3,7 @@ name: CI
 on: push
 
 env:
-  APK_PATH: '/app/platforms/android/app/build/outputs/apk/debug'
+  APK_PATH: './platforms/android/app/build/outputs/apk/debug'
 
 jobs:
   build:
@@ -21,7 +21,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: apk
-          path: ${{ env.APK_PATH }}/
+          path: ${{ env.APK_PATH }}
 
   release:
     if: startsWith(github.ref, 'refs/tags')
@@ -34,7 +34,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: apk
-          path: ${{ env.APK_PATH }}/
+          path: ${{ env.APK_PATH }}
       - name: Upload apk to release assets
         run: |
           set -x
