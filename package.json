@@ -1,16 +1,14 @@
 {
   "name": "hu.zero.zcode",
   "displayName": "Zcode",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Zcode is android and IOS code editor app",
   "main": "index.js",
   "scripts": {
     "lang": "node ./utils/lang.js",
     "config-build": "node ./utils/config.js",
     "build": "yarn config-build p && npm run build-webpack && npm run build-apk",
-    "sh": "docker-compose run --rm app bash",
     "build-webpack": "webpack",
-    "build-docker": "docker-compose run --rm app npm run build",
     "build-apk": "cordova build android",
     "build-run-free": "yarn config-build d free && webpack && cordova run android",
     "build-run": "yarn config-build d && webpack && cordova run android",

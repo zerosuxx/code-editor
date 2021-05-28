@@ -6,17 +6,20 @@ default: help
 help: ## Show this help
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' -e 's/:.*#/ #/'
 
-install:
-	$(run_docker) npm install
-
-clean:
-	$(run_docker) npm run clean
-
-build:
-	$(run_docker) npm run build
-
 up:
 	docker-compose up -d
+
+down:
+	docker-compose down
+
+install:
+	$(exec_docker) npm install
+
+clean:
+	$(exec_docker) npm run clean
+
+build:
+	$(exec_docker) npm run build
 
 start:
 	$(exec_docker) npm start

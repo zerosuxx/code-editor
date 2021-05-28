@@ -45,6 +45,7 @@ If you have installed yarn you can simply run `yarn build-run` to build the apk 
 ## How to build with docker
 
 ```
+make up
 make clean
 make build
 ```
